@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Forms 2_3</title>
+</head>
+
+<body>
+    <main>
+        <form>
+            <fieldset>
+                <legend>Register form</legend>
+                <label for="name">Name</label>
+                <input type="text" placeholder="Name"> <br>
+                <label for="surname">Surname</label>
+                <input type="text" placeholder="Surname"><br>
+                <label for="email">Email</label>
+                <input type="email" placeholder="Email"><br>
+                <div class="gender">
+                    <label for="">Gender</label>
+                    Male <input type="radio" name="gender" checked />
+                    Female <input type="radio" name="gender" />
+                    Diverse <input type="radio" name="gender" />
+                </div>
+                <label for="">Picture</label>
+                <input type="file" />
+                <label for="Country">Country </label>
+                <select id="Country">
+                    <option value="1">Germany</option>
+                    <option value="2">France</option>
+                    <option value="3">Spain</option>
+                </select> <br>
+                <div class="languages">
+                    <label for="preferred languages">Preferred languages</label>
+                    <select name="" id="preferred__languages" multiple>
+                        <option value="1">HTML</option>
+                        <option value="2">CSS</option>
+                        <option value="3">JS</option>
+                        <option value="4">react.js</option>
+                        <option value="5">Python</option>
+                        <option value="6">C++</option>
+                    </select>
+                    <p>(To choose more than one use cmd key)</p>
+                </div><br>
+                <label for="field">Field of activity</label>
+                <input type="checkbox" name="field"> IT
+                <input type="checkbox" name="field"> Design
+                <input type="checkbox" name="field"> Other<br>
+                <button type="submit">Send</button><button type="reset">Cancel</button>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>
